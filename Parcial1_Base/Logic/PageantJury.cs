@@ -23,6 +23,15 @@ namespace Parcial1_Base.Logic
         {
             bool result = false;
 
+            if (d.CanParticipate && contestants.Count < 4)
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+
             return result;
         }
 
